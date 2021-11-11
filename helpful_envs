@@ -1,0 +1,4 @@
+# Angora fuzzing
+angora_cc=$(which angora-clang)
+export COMPILE_WITH_ANGORA_FAST="CC=$angora_cc USE_FAST=1 EXTENSION=fast"
+export COMPILE_WITH_ANGORA_TAINT="CC=$angora_cc USE_TRACK=1 EXTENSION=taint"
