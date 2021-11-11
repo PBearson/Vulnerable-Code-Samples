@@ -1,10 +1,10 @@
 CC ?= gcc
-CLFAGS ?= -Wall -O3
+CFLAGS ?= -Wall -g
 
 all: simple_bof
 
-test1: simple_bof.c
-	$(CC) $(CFLAGS) -o test1 test1.c 
+simple_bof: simple_bof.c
+	$(CC) $(CFLAGS) -o simple_bof simple_bof.c 
 
 clean:
-	rm test1
+	rm simple_bof
